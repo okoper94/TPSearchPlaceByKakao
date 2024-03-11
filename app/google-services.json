@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1010413843921",
+    "project_id": "tpsearchplackys",
+    "storage_bucket": "tpsearchplackys.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010413843921:android:a3a1795085644d0906dcf0",
+        "android_client_info": {
+          "package_name": "com.kys2024.tpsearchplacebykakao"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApDxW-PTrtL0cwk6Rdw8jgD5n_bZf70jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

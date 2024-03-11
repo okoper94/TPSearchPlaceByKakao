@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/choice01"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_choico_selected"
+        android:src="@drawable/baseline_family_restroom_24"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+
+    <ImageView
+        android:id="@+id/choice02"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_choice"
+        android:src="@drawable/round_man_24"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+
+    <ImageView
+        android:id="@+id/choice03"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_choice"
+        android:src="@drawable/baseline_park_24"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+
+    <ImageView
+        android:id="@+id/choice04"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/baseline_ev_station_24"
+        android:src="@drawable/round_man_24"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+
+    <ImageView
+        android:id="@+id/choice05"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_choice"
+        android:src="@drawable/baseline_local_pharmacy_24"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+
+    <ImageView
+        android:id="@+id/choice06"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_choice"
+        android:src="@drawable/baseline_local_gas_station_24"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+
+    <ImageView
+        android:id="@+id/choice07"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_choice"
+        android:src="@drawable/baseline_local_convenience_store_24"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+
+    <ImageView
+        android:id="@+id/choice08"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_choice"
+        android:src="@drawable/baseline_local_parking_24"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+
+    <ImageView
+        android:id="@+id/choice09"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_choice"
+        android:src="@drawable/round_man_24"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+
+    <ImageView
+        android:id="@+id/choice10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_choice"
+        android:src="@drawable/round_man_24"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+
+    <ImageView
+        android:id="@+id/choice11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_choice"
+        android:src="@drawable/round_man_24"
+        android:padding="8dp"
+        android:layout_margin="4dp"/>
+
+
+</LinearLayout>
