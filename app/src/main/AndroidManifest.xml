@@ -11,9 +11,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TPSearchPlaceByKakao"
         android:usesCleartextTraffic="true"
@@ -57,6 +57,10 @@
                     android:scheme="kakaodec4139553397b32a5347ba2135d82cd" />
             </intent-filter>
         </activity>
+<!--카카오 지도 네이티브 앱키 등록-->
+        <meta-data
+            android:name="com.kakao.vectormap.APP_KEY"
+            android:value="dec4139553397b32a5347ba2135d82cd"/>
 
     </application>
 

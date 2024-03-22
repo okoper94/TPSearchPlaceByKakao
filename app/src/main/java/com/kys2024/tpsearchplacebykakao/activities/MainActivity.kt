@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
         //특정 키워드 단축 choice 버튼들에 리스너 처리하는 코드를 별도의 메소드에..
         setChoiceButtonsListenner()
 
-        //위치정보 제공에 대한 퍼미션 체크
+        //위치정보 제공에 대한 퍼미션 체크---------------------------------------------------------------------------------
         val permissionState:Int = checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)
         if (permissionState==PackageManager.PERMISSION_DENIED){
             //거부됬을때 퍼미션을 요청하는다이얼로그 보이고 그 결과를 받아오는 작업을 대신해주는 대행사 이용
@@ -216,13 +216,11 @@ class MainActivity : AppCompatActivity() {
         val retrofitService=retrofit.create(RetrofitService::class.java)
         val call=retrofitService.searchPlace(searchQuery,myLocation?.longitude.toString(),myLocation?.latitude.toString())
         call.enqueue(object :Callback<KakaoSearchPlaceResponse>{
-            override fun onResponse(
-                call: Call<KakaoSearchPlaceResponse>,
-                response: Response<KakaoSearchPlaceResponse>
+            override fun onResponse(call: Call<KakaoSearchPlaceResponse>, response: Response<KakaoSearchPlaceResponse>
             ) {
                 //응답받은 json을 파싱한 객체를 참조하기..
                 searchPlaceResponse= response.body()
-                
+
                 //먼저 데이터가 온전히 잘 왔는지 파악해보기
                 val meta:PlaceMeta? = searchPlaceResponse?.meta
                 val documents: List<Place>? = searchPlaceResponse?.documents
@@ -236,6 +234,7 @@ class MainActivity : AppCompatActivity() {
                 ObjectAnimator.ofFloat(binding.fadRefresh,"rotationX",0f).start()
 
             }
+
 
             override fun onFailure(call: Call<KakaoSearchPlaceResponse>, t: Throwable) {
                 Toast.makeText(this@MainActivity, "서버 오류가 있습니다.", Toast.LENGTH_SHORT).show()
